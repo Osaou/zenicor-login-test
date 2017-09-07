@@ -40,10 +40,10 @@ $(() => {
     $('form').submit(e => {
         //e.preventDefault()
 
-        const user = $('input[name=user]').val()
+        const name = $('input[name=name]').val()
         const pass = $('input[name=pass]').val()
 
-        if (!user || !pass) {
+        if (!name || !pass) {
             e.preventDefault()
             return
         }

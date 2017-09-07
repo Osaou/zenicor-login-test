@@ -14,7 +14,7 @@ plugins {
 }
 
 jar {
-    baseName = 'zenicor-frontend'
+    baseName = 'zenicor-backend'
     version = '1.0-SNAPSHOT'
 }
 
@@ -26,7 +26,6 @@ repositories {
 }
 
 dependencies {
-    compile 'org.apache.httpcomponents:fluent-hc:4.5.3'
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compile 'org.springframework.boot:spring-boot-devtools'
     testCompile 'junit:junit'
