@@ -5,4 +5,4 @@
 
 # build and run docker image
 docker build -t zenicor-backend .
-docker run -it --rm -p 7070:7070 --name api --link mysql:mysql zenicor-backend
+docker run -d --rm -p 7070:7070 --name api --link mysql:mysql zenicor-backend

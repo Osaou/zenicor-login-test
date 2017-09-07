@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+
+
 @Repository
 public class UserDAOImpl implements UserDAO {
 
@@ -22,6 +24,7 @@ public class UserDAOImpl implements UserDAO {
 
 
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<User> listUsers() {
         Session session = this.sessionFactory.getCurrentSession();

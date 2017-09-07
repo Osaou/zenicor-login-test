@@ -29,4 +29,4 @@ TO 'zenicor'@'%';
 -- fill in some data
 
 INSERT INTO user (name, password)
-VALUES ('kokos', 'test');
+VALUES ('Oskar', 'test');

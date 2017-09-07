@@ -6,6 +6,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 
+
+
 @SpringBootApplication
 @ComponentScan
 @ImportResource("classpath:spring-config.xml")
