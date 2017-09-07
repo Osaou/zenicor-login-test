@@ -1,0 +1,14 @@
+# run mysql server
+./build.sh
+
+# connect via mysql command line
+docker run -it --link mysql:mysql --rm mysql:5.7 sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+
+# stop mysql container
+docker stop mysql
+
+# see stopped, dangling containers
+docker ps --filter="status=exited"
+
+# clean up dangling images
+docker rmi $(docker images | grep "^<none>" | awk '{print $3}')

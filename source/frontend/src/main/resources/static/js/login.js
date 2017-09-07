@@ -40,12 +40,12 @@ $(() => {
     $('form').submit(e => {
         //e.preventDefault()
 
-        const name = $('input[name=name]').val()
-        const pass = $('input[name=pass]').val()
+        const name = $('input[name=name]').val();
+        const pass = $('input[name=pass]').val();
 
         if (!name || !pass) {
-            e.preventDefault()
-            return
+            e.preventDefault();
+            return;
         }
 
         /*$.ajax({
@@ -59,5 +59,5 @@ $(() => {
         .fail(e => {
             console.log('noes', e)
         })*/
-    })
-})
+    });
+});
